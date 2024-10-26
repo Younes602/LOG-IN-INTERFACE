@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>LogIn</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   <div class="content">
+     <div class="ProfilePhoto"> 
+	 <img src="Profile.png" class="Image"/>
+	 <div class="Face"></div>
+	 <div class="Hide"></div>
+	 <div class="Smile">
+	     <div class="Mouth"></div>
+	 </div>
+	 <div class="Hand">
+	 <img src="Hand.png" class="HandImage"/> 
+	 </div>
+	 </div> 
+
+     <form class="LogInBox">
+	    <label>Email<br/>
+	        <input onclick="Change()" onkeypress="MoveFace()" onabort="Delete()" class="input1" type="text" placeholder="email@domain.com"/>
+	    </label> 
+		<br/>
+		<label>Password   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input onclick="Show()" type="checkbox" class="Check"/> <span class="ShowText">Show</span> 
+		<br/>
+	        <input onclick="Hide()" class="input2" type="password"/>
+	    </label>	
+		<br/>
+		<button onclick="LogIn()"> log In</button>
+	 </form>	 
+
+   </div>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
